@@ -31,10 +31,9 @@ export const Marquee = memo<Props>(({ items, repeatCount = 1 }) => {
 
   return (
     <Box sx={{ width: '100%', overflow: 'hidden', whiteSpace: 'nowrap' }}>
-      <Typography
-        variant='body1'
-        fontWeight={700}
-        textTransform='uppercase'
+      <Stack
+        direction='row'
+        columnGap={4}
         sx={{
           py: 2,
           animation: `${marqueeKeyframes} 30s linear infinite`,
@@ -43,15 +42,19 @@ export const Marquee = memo<Props>(({ items, repeatCount = 1 }) => {
           }
         }}
       >
-        <Stack direction='row' columnGap={4}>
-          {fullList.map((item, index) => (
-            <Fragment key={index}>
-              <Box component='span'>{item}</Box>
-              {index !== fullList.length - 1 && <Box component='span'>•</Box>}
-            </Fragment>
-          ))}
-        </Stack>
-      </Typography>
+        {fullList.map((item, index) => (
+          <Fragment key={index}>
+            <Typography variant='body1' fontWeight={700} textTransform='uppercase'>
+              {item}
+            </Typography>
+            {index !== fullList.length - 1 && (
+              <Typography variant='body1' fontWeight={700} textTransform='uppercase'>
+                •
+              </Typography>
+            )}
+          </Fragment>
+        ))}
+      </Stack>
     </Box>
   );
 });
