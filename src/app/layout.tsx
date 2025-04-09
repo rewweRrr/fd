@@ -5,6 +5,7 @@ import { ReactNode } from 'react';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { theme } from '@/theme/theme';
+import { Footer } from '@/components/footer';
 
 const fdFont = localFont({
   src: [
@@ -50,6 +51,7 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
             <CssBaseline enableColorScheme />
             <main>{children}</main>
+            <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
