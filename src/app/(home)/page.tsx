@@ -1,7 +1,9 @@
 import { Header } from '@/components/header';
 import { Marquee } from '@/components/marquee';
-import { Stack, Typography } from '@mui/material';
-import { DemoButton } from '@/components/demo-button';
+import { ImagesBanner } from '@/app/(home)/_ui/images-banner';
+import { MainBanner } from '@/app/(home)/_ui/main-banner';
+import { StickyImages } from '@/app/(home)/_ui/sticky-images';
+import { ProductStrategy } from '@/app/(home)/_ui/product-strategy';
 
 const MARQUEE_LIST = ['ИНДУСТРИЯ 4.0', 'ПРЕДИКТИВНАЯ АНАЛИТИКА', 'ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ'];
 
@@ -10,12 +12,10 @@ export default function Home() {
     <>
       <Header />
       <Marquee items={MARQUEE_LIST} repeatCount={4} />
-      <Stack alignItems='center' justifyContent='center' rowGap={5} pt={10} pb={8}>
-        <Typography variant='h1' fontSize={42} fontWeight={700} textAlign='center' textTransform='uppercase'>
-          Цифровое решение <br /> для автоматизации <br /> производства
-        </Typography>
-        <DemoButton size='large' />
-      </Stack>
+      <MainBanner />
+      <ImagesBanner />
+      <StickyImages />
+      <ProductStrategy />
     </>
   );
 }

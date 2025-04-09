@@ -18,7 +18,7 @@ export default function Layout({
       sx={{
         backgroundImage,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
+        backgroundSize: '956px 956px',
         backgroundPosition: '-472px -472px'
       }}
     >
