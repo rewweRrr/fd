@@ -7,7 +7,7 @@ export default function Contacts() {
   return (
     <>
       <Header />
-      <SubHeader title='Свяжитесь с нами' />
+      <SubHeader title='Свяжитесь с нами' maxWidth='xl' />
       <Container maxWidth='xl'>
         <Stack rowGap={4} pb={8}>
           <ContactCard

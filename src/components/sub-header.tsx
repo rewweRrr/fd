@@ -1,14 +1,16 @@
 import { memo } from 'react';
 import { Container, Stack, Typography } from '@mui/material';
+import { Breakpoint } from '@mui/system';
 
 interface Props {
   title: string;
   description?: string;
+  maxWidth: Breakpoint;
 }
 
-export const SubHeader = memo<Props>(({ title, description }) => {
+export const SubHeader = memo<Props>(({ title, description, maxWidth }) => {
   return (
-    <Container maxWidth='xl'>
+    <Container maxWidth={maxWidth}>
       <Stack direction='row' columnGap={16} alignItems='center' py={12}>
         <Typography variant='h1' fontWeight={700} flexBasis={520} fontSize={50} textTransform='uppercase'>
           {title}

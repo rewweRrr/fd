@@ -1,6 +1,8 @@
 import { Header } from '@/components/header';
 import { Marquee } from '@/components/marquee';
 import { SubHeader } from '@/components/sub-header';
+import { BoardInfo } from '@/app/hardware/_ui/board-info';
+import { Container, Stack } from '@mui/material';
 
 const MARQUEE_LIST = [
   'Подключение по WiFi',
@@ -18,7 +20,42 @@ export default function Hardware() {
         title='Аппаратный комплекс'
         description='Подключение оборудования осуществляется
 при помощи платы сбора и ретрансляции данных собственной разработки'
+        maxWidth='lg'
       />
+      <Container maxWidth='lg'>
+        <Stack rowGap={4} alignItems='center' justifyContent='center'>
+          <BoardInfo
+            imageSrc='/hardware/temperature-control.webp'
+            title='Основная плата'
+            chars={[
+              'Используется технология Fog Computing',
+              'Предварительная обработка данных',
+              'Устойчивость к перебоям в электроэнергии'
+            ]}
+          />
+          <BoardInfo
+            imageSrc='/hardware/interface-a1.webp'
+            title='Интерфейс A1'
+            chars={[
+              '4x2 канала SPI до 150 КБ/с',
+              '10 изолированных цифровых входов до 400В',
+              '2x RS232 , 1xRS485',
+              'Подключение датчиков',
+              'Удобная настройка и отладка'
+            ]}
+          />
+          <BoardInfo
+            imageSrc='/hardware/temperature_pair.webp'
+            title='Термопара'
+            chars={[
+              'Подключение до 2 термопар',
+              'Подходит для термопар J и K типа',
+              'Интерфейс SPI',
+              'Подключение одним проводом'
+            ]}
+          />
+        </Stack>
+      </Container>
     </>
   );
 }
