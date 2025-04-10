@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://fd-test-sigma.vercel.app
+
+# Sitemaps
+Sitemap: https://fd-test-sigma.vercel.app/sitemap.xml
