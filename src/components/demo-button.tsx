@@ -8,7 +8,7 @@ type Props = {
 
 export const DemoButton = memo<Props>(({ size }) => {
   return (
-    <Button variant='contained' size={size} component={NextLink} href='#'>
+    <Button variant='contained' size={size} component={NextLink} href='#form'>
       Заказать Демо
     </Button>
   );
