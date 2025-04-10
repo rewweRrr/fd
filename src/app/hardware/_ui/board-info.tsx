@@ -18,7 +18,7 @@ export const BoardInfo = memo<Props>(({ imageSrc, title, chars }) => {
         <Stack>
           {chars.map((char, index) => (
             <Stack key={char}>
-              <Typography variant='body1' fontSize={16} py={2}>
+              <Typography variant='body1' fontSize={16} py={2} fontWeight={500}>
                 {char}
               </Typography>
               {index !== chars.length - 1 && <Box height='1px' width='100%' bgcolor='black' />}
