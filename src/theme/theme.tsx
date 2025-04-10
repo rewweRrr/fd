@@ -2,6 +2,7 @@
 import { createTheme } from '@mui/material/styles';
 import { ruRU } from '@mui/material/locale';
 import { MuiButton } from '@/theme/modifiers/button.modifier';
+import { MuiChip } from '@/theme/modifiers/chip.modifier';
 
 export const theme = createTheme(
   {
@@ -14,11 +15,16 @@ export const theme = createTheme(
     colorSchemes: { light: true },
     palette: {
       primary: {
-        main: '#141414'
+        main: '#141414',
+        light: '#f3f3f3'
+      },
+      secondary: {
+        main: '#f3f3f3'
       }
     },
     components: {
-      MuiButton
+      MuiButton,
+      MuiChip
     }
   },
   ruRU

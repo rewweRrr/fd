@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { Box, Container, Grid, Stack, Typography } from '@mui/material';
+import { Box, Chip, Container, Grid, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
 
 export const ProductStrategy = memo(() => {
@@ -15,39 +15,32 @@ export const ProductStrategy = memo(() => {
               <Typography fontSize={28} fontWeight={700} textAlign='center' textTransform='uppercase'>
                 Внедрение на производства
               </Typography>
-              <Box
-                display='flex'
-                justifyContent='center'
-                alignItems='center'
-                borderRadius={2}
-                bgcolor='#f3f3f3'
-                px={2}
-                py={1}
-              >
-                <Typography fontSize={16} fontWeight={500}>
-                  2025
-                </Typography>
-              </Box>
+              <Chip
+                size='large'
+                variant='square-fit'
+                color='secondary'
+                label={
+                  <Typography fontSize={16} fontWeight={500}>
+                    2025
+                  </Typography>
+                }
+              />
             </Stack>
             <Box height={480} position='relative'>
               <Image src='/home/master_dashboard.svg' alt='' fill />
             </Box>
           </Grid>
           <Grid size={3} border='1px solid' p={2} display='flex' flexDirection='column' rowGap={2} height='400px'>
-            <Box
-              display='flex'
-              justifyContent='center'
-              alignItems='center'
-              borderRadius={2}
-              bgcolor='#f3f3f3'
-              px={2}
-              py={1}
-              width='fit-content'
-            >
-              <Typography fontSize={16} fontWeight={500}>
-                2026
-              </Typography>
-            </Box>
+            <Chip
+              size='large'
+              variant='square-fit'
+              color='secondary'
+              label={
+                <Typography fontSize={16} fontWeight={500}>
+                  2026
+                </Typography>
+              }
+            />
             <Typography fontSize={22} fontWeight={700}>
               Предиктивная аналитика
             </Typography>
@@ -56,20 +49,16 @@ export const ProductStrategy = memo(() => {
             </Typography>
           </Grid>
           <Grid size={3} border='1px solid' p={2} display='flex' flexDirection='column' rowGap={2} height='400px'>
-            <Box
-              display='flex'
-              justifyContent='center'
-              alignItems='center'
-              borderRadius={2}
-              bgcolor='#f3f3f3'
-              px={2}
-              py={1}
-              width='fit-content'
-            >
-              <Typography fontSize={16} fontWeight={500}>
-                2027
-              </Typography>
-            </Box>
+            <Chip
+              size='large'
+              variant='square-fit'
+              color='secondary'
+              label={
+                <Typography fontSize={16} fontWeight={500}>
+                  2027
+                </Typography>
+              }
+            />
             <Typography fontSize={22} fontWeight={700}>
               Искусственный интеллект
             </Typography>
@@ -88,24 +77,20 @@ export const ProductStrategy = memo(() => {
             height='400px'
             bgcolor='#141414'
           >
-            <Box
-              display='flex'
-              justifyContent='center'
-              alignItems='center'
-              borderRadius={2}
-              bgcolor='#f3f3f3'
-              px={2}
-              py={1}
-              width='fit-content'
-            >
-              <Typography fontSize={16} fontWeight={500}>
-                2030
-              </Typography>
-            </Box>
-            <Typography fontSize={28} fontWeight={700} color='#fff'>
+            <Chip
+              size='large'
+              variant='square-fit'
+              color='secondary'
+              label={
+                <Typography fontSize={16} fontWeight={500}>
+                  2030
+                </Typography>
+              }
+            />
+            <Typography fontSize={28} fontWeight={700} color='secondary'>
               Индустрия 4.0
             </Typography>
-            <Typography fontSize={16} fontWeight={500} color='#fff'>
+            <Typography fontSize={16} fontWeight={500} color='secondary'>
               Factory Director использует передовые технологии, интегрируя автоматизацию и умные системы для повышения
               гибкости и скорости производства
             </Typography>
