@@ -30,7 +30,7 @@ export const Marquee = memo<Props>(({ items, repeatCount = 1 }) => {
   }, [items, repeatCount]);
 
   return (
-    <Box sx={{ width: '100%', overflow: 'hidden', whiteSpace: 'nowrap' }}>
+    <Box sx={{ width: '100%', overflow: 'hidden', whiteSpace: 'nowrap', position: 'absolute' }}>
       <Stack
         direction='row'
         columnGap={4}
