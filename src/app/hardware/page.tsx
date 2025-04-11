@@ -4,6 +4,7 @@ import { SubHeader } from '@/components/sub-header';
 import { BoardInfo } from '@/app/hardware/_ui/board-info';
 import { Box, Container, Grid, Stack } from '@mui/material';
 import { BannerCard } from '@/app/hardware/_ui/banner-card';
+import { BannerCardList } from '@/app/hardware/_ui/banner-card-list';
 
 const MARQUEE_LIST = [
   'Подключение по WiFi',
@@ -34,33 +35,7 @@ export default function Hardware() {
               'Устойчивость к перебоям в электроэнергии'
             ]}
           />
-          <Grid container spacing={2}>
-            <Grid size={{ xs: 12, md: 4 }}>
-              <BannerCard
-                title='Агрегация и ретрансляция данных'
-                subTitle='Отслеживает состояние линий от 4 раз в секунду для фиксации точного времени событий'
-                backgroundColor='#f2f2f2'
-                imageSrc='/hardware/lines_stat.svg'
-              />
-            </Grid>
-            <Grid size={{ xs: 12, md: 4 }}>
-              <BannerCard
-                title='6 часов автономного сбора данных'
-                subTitle='Сохранение показателей конечной продукции и событий на линии'
-                backgroundColor='#9bd32e'
-                imageSrc='/hardware/data_track.svg'
-              />
-            </Grid>
-            <Grid size={{ xs: 12, md: 4 }}>
-              <BannerCard
-                title='Подключение по WIFI'
-                subTitle='Пересылка данных на сервер дистанционно или по проводному Ethernet'
-                backgroundColor='#141414'
-                imageSrc='/hardware/wi_fi.svg'
-                color='secondary'
-              />
-            </Grid>
-          </Grid>
+          <BannerCardList />
           <BoardInfo
             imageSrc='/hardware/interface-a1.webp'
             title='Интерфейс A1'
