@@ -1,4 +1,4 @@
-import { Header } from '@/components/header';
+import { Header } from '@/components/header/header';
 import { Marquee } from '@/components/marquee';
 import { SubHeader } from '@/components/sub-header';
 import { BoardInfo } from '@/app/hardware/_ui/board-info';
@@ -24,7 +24,7 @@ export default function Hardware() {
         maxWidth='lg'
       />
       <Container maxWidth='lg'>
-        <Stack rowGap={4} alignItems='center' justifyContent='center'>
+        <Stack rowGap={12} alignItems='center' justifyContent='center'>
           <BoardInfo
             imageSrc='/hardware/temperature-control.webp'
             title='Основная плата'

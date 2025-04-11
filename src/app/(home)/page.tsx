@@ -1,4 +1,4 @@
-import { Header } from '@/components/header';
+import { Header } from '@/components/header/header';
 import { Marquee } from '@/components/marquee';
 import { ImagesBanner } from '@/app/(home)/_ui/images-banner';
 import { MainBanner } from '@/app/(home)/_ui/main-banner';

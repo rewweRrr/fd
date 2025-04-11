@@ -1,4 +1,4 @@
-import { Header } from '@/components/header';
+import { Header } from '@/components/header/header';
 import { SubHeader } from '@/components/sub-header';
 import { ContactCard } from './_ui/contact-card';
 import { Container, Stack } from '@mui/material';
