@@ -53,7 +53,7 @@ export const BoardInfo = memo<Props>(({ imageSrc, title, chars, variant = 'defau
         <Box gridColumn={{ md: titleGridColumn }} gridRow={{ md: titleGridRow }}>
           <Typography
             variant='body1'
-            fontSize={36}
+            fontSize={{ xs: 26, md: 36 }}
             fontWeight={700}
             textTransform='uppercase'
             textAlign={titleTextAlign}
