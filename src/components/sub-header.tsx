@@ -11,7 +11,7 @@ interface Props {
 export const SubHeader = memo<Props>(({ title, description, maxWidth }) => {
   return (
     <Container maxWidth={maxWidth}>
-      <Stack direction={{ md: 'row' }} columnGap={16} rowGap={4} alignItems='center' py={12}>
+      <Stack direction={{ md: 'row' }} columnGap={16} rowGap={4} alignItems='center' py={{ xs: 8, md: 12 }}>
         <Typography
           variant='h1'
           fontWeight={700}
@@ -21,9 +21,11 @@ export const SubHeader = memo<Props>(({ title, description, maxWidth }) => {
         >
           {title}
         </Typography>
-        <Typography variant='h6' fontSize={20} flexBasis={{ md: 600 }}>
-          {description}
-        </Typography>
+        {description && (
+          <Typography variant='h6' fontSize={20} flexBasis={{ md: 600 }}>
+            {description}
+          </Typography>
+        )}
       </Stack>
     </Container>
   );

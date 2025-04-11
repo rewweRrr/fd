@@ -2,10 +2,10 @@ import { memo, useCallback, useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { AppBar, Container, Dialog, Divider, IconButton, Stack } from '@mui/material';
-import Image from 'next/image';
 import { Navigation } from './navigation';
 import { PresentationButton } from './presentation-button';
 import { DemoButton } from '../demo-button';
+import { Logo } from './logo';
 
 export const HeaderMenu = memo(() => {
   const [open, setOpen] = useState(false);
@@ -20,7 +20,7 @@ export const HeaderMenu = memo(() => {
         <AppBar sx={{ bgcolor: '#fff' }} variant='outlined' position='static'>
           <Container maxWidth='xl'>
             <Stack direction='row' columnGap={3} justifyContent='space-between' alignItems='center' py={3} width='100%'>
-              <Image src='factory_director_log.svg' alt='logo' height={40} width={147} />
+              <Logo />
               <IconButton color='primary' aria-label='menu' onClick={handleClose}>
                 <CloseIcon />
               </IconButton>

@@ -13,10 +13,10 @@ interface Props {
 export const ContactCard = memo<Props>(({ imageSrc, title, subTitle, phone, telegram }) => {
   return (
     <Fade in timeout={500}>
-      <Stack direction={{ md: 'row' }} columnGap={4} rowGap={2}>
+      <Stack direction={{ md: 'row' }} columnGap={4} rowGap={2} alignItems='center'>
         <Image src={imageSrc} alt={subTitle} width={320} height={320} />
         <Stack rowGap={1}>
-          <Typography variant='h2' fontSize={44} fontWeight={700} textTransform='uppercase'>
+          <Typography variant='h2' fontSize={{ xs: 26, md: 44 }} fontWeight={700} textTransform='uppercase'>
             {title}
           </Typography>
           <Typography variant='body1' fontSize={22}>
