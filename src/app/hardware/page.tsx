@@ -2,8 +2,7 @@ import { Header } from '@/components/header';
 import { Marquee } from '@/components/marquee';
 import { SubHeader } from '@/components/sub-header';
 import { BoardInfo } from '@/app/hardware/_ui/board-info';
-import { Box, Container, Grid, Stack } from '@mui/material';
-import { BannerCard } from '@/app/hardware/_ui/banner-card';
+import { Box, Container, Stack } from '@mui/material';
 import { BannerCardList } from '@/app/hardware/_ui/banner-card-list';
 
 const MARQUEE_LIST = [
