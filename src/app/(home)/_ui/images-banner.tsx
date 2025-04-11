@@ -5,11 +5,11 @@ import Image from 'next/image';
 export const ImagesBanner = memo(() => {
   return (
     <Grid container spacing={2} height={346}>
-      <Grid size={4} position='relative'>
-        <Image src='/home/monitoring_cover.svg' alt='' fill style={{ objectFit: 'cover' }} />
+      <Grid size={4} position='relative' display={{ xs: 'none', md: 'block' }}>
+        <Image src='/home/monitoring_cover.svg' alt='' fill style={{ objectFit: 'cover' }} sizes='100vw' />
       </Grid>
       <Grid
-        size={4}
+        size={{ xs: 12, md: 4 }}
         display='flex'
         flexDirection='column'
         justifyContent='center'
@@ -23,8 +23,8 @@ export const ImagesBanner = memo(() => {
           к выручке за счёт полного <br /> контроля за производством
         </Typography>
       </Grid>
-      <Grid size={4} position='relative' display='flex' alignItems='center'>
-        <Image src='/home/form_bg_cover.webp' alt='' fill style={{ zIndex: -1, objectFit: 'cover' }} sizes='100vw' />
+      <Grid size={4} position='relative' alignItems='center' display={{ xs: 'none', md: 'flex' }}>
+        <Image src='/home/form_bg_cover.webp' alt='' fill style={{ zIndex: -1, objectFit: 'cover' }} sizes='100%' />
         <Image src='/home/form_cover.svg' alt='' width={251} height={342} style={{ marginLeft: '10px' }} />
       </Grid>
     </Grid>

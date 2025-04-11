@@ -6,13 +6,13 @@ export const ProductStrategy = memo(() => {
   return (
     <Container maxWidth='xl'>
       <Stack rowGap={4} mt={10}>
-        <Typography fontSize={40} fontWeight={700} textAlign='center' textTransform='uppercase'>
+        <Typography fontSize={{ xs: 26, md: 40 }} fontWeight={700} textAlign='center' textTransform='uppercase'>
           СТРАТЕГИЯ РАЗВИТИЯ ПРОДУКТА
         </Typography>
         <Grid container spacing={2}>
           <Grid size={12} border='1px solid' p={2} display='flex' flexDirection='column' rowGap={2}>
             <Stack direction='row' columnGap={2} justifyContent='space-between'>
-              <Typography fontSize={28} fontWeight={700} textAlign='center' textTransform='uppercase'>
+              <Typography fontSize={{ xs: 14, md: 28 }} fontWeight={700} textAlign='center' textTransform='uppercase'>
                 Внедрение на производства
               </Typography>
               <Chip
@@ -26,11 +26,19 @@ export const ProductStrategy = memo(() => {
                 }
               />
             </Stack>
-            <Box height={480} position='relative'>
+            <Box height={{ xs: 200, sm: 350, md: 480 }} position='relative'>
               <Image src='/home/master_dashboard.svg' alt='' fill />
             </Box>
           </Grid>
-          <Grid size={3} border='1px solid' p={2} display='flex' flexDirection='column' rowGap={2} height='400px'>
+          <Grid
+            size={{ xs: 12, md: 3 }}
+            border='1px solid'
+            p={2}
+            display='flex'
+            flexDirection='column'
+            rowGap={2}
+            height='400px'
+          >
             <Chip
               size='large'
               variant='square-fit'
@@ -48,7 +56,15 @@ export const ProductStrategy = memo(() => {
               Предсказательные модели помогают минимизировать риски, предотвращать сбои и повышать точность планирования
             </Typography>
           </Grid>
-          <Grid size={3} border='1px solid' p={2} display='flex' flexDirection='column' rowGap={2} height='400px'>
+          <Grid
+            size={{ xs: 12, md: 3 }}
+            border='1px solid'
+            p={2}
+            display='flex'
+            flexDirection='column'
+            rowGap={2}
+            height='400px'
+          >
             <Chip
               size='large'
               variant='square-fit'
@@ -68,7 +84,7 @@ export const ProductStrategy = memo(() => {
           </Grid>
           <Grid
             position='relative'
-            size={6}
+            size={{ xs: 12, md: 6 }}
             border='1px solid'
             p={2}
             display='flex'
@@ -98,7 +114,7 @@ export const ProductStrategy = memo(() => {
               src='/home/polygon.svg'
               alt=''
               fill
-              sizes='100vh'
+              sizes='100vw'
               style={{ objectFit: 'contain', objectPosition: 'bottom' }}
             />
           </Grid>
