@@ -2,7 +2,7 @@ import { Header } from '@/components/header';
 import { Marquee } from '@/components/marquee';
 import { SubHeader } from '@/components/sub-header';
 import { BoardInfo } from '@/app/hardware/_ui/board-info';
-import { Container, Stack } from '@mui/material';
+import { Box, Container, Stack } from '@mui/material';
 
 const MARQUEE_LIST = [
   'Подключение по WiFi',
@@ -56,6 +56,21 @@ export default function Hardware() {
           />
         </Stack>
       </Container>
+      <Box bgcolor='#9bd32e' py={20}>
+        <Container maxWidth='lg'>
+          <BoardInfo
+            variant='banner'
+            imageSrc='/hardware/integrated_interface.webp'
+            title='Внедрение на производства'
+            chars={[
+              'Установка на DIN-рейку',
+              'Интеграция в производственную линию',
+              'Интерфейс SPI',
+              'Компактный размер'
+            ]}
+          />
+        </Container>
+      </Box>
     </>
   );
 }
