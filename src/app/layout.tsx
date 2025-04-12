@@ -46,7 +46,14 @@ export const metadata: Metadata = {
     'Внедрение на производства',
     'Предиктивная аналитика',
     'Искусственный интеллект'
-  ]
+  ],
+  openGraph: {
+    title: 'Factory Director',
+    description: 'Цифровое решение для автоматизации производства',
+    images: [{ url: '/factory_director_log.svg' }],
+    url: 'https://fd-test-sigma.vercel.app',
+    type: 'website'
+  }
 };
 
 export default function RootLayout({
