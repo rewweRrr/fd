@@ -6,6 +6,7 @@ import { StickyImages } from '@/app/(home)/_ui/sticky-images';
 import { ProductStrategy } from '@/app/(home)/_ui/product-strategy';
 import { FeedbackForm } from '@/app/(home)/_ui/feedback-form';
 import { Stack } from '@mui/material';
+import { ProductionTypes } from '@/app/(home)/_ui/production-types';
 
 const MARQUEE_LIST = ['ИНДУСТРИЯ 4.0', 'ПРЕДИКТИВНАЯ АНАЛИТИКА', 'ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ'];
 
@@ -19,6 +20,7 @@ export default function Home() {
         <ImagesBanner />
         <StickyImages />
         <ProductStrategy />
+        <ProductionTypes />
         <FeedbackForm />
       </Stack>
     </>
