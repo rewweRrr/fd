@@ -42,7 +42,7 @@ export const FeedbackForm = memo(() => {
     <Container maxWidth='xl'>
       <Stack rowGap={4} alignItems='center' maxWidth={620} margin='0 auto' mt={10}>
         <Stack rowGap={4}>
-          <Typography fontSize={{ xs: 26, md: 40 }} fontWeight={700} textAlign='center' textTransform='uppercase'>
+          <Typography variant='h2' textAlign='center'>
             Закажите демо
           </Typography>
           <Typography textAlign='center'>

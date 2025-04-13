@@ -6,7 +6,7 @@ export const ProductStrategy = memo(() => {
   return (
     <Container maxWidth='xl'>
       <Stack rowGap={4} mt={10}>
-        <Typography fontSize={{ xs: 26, md: 40 }} fontWeight={700} textAlign='center' textTransform='uppercase'>
+        <Typography variant='h2' textAlign='center'>
           СТРАТЕГИЯ РАЗВИТИЯ ПРОДУКТА
         </Typography>
         <Grid container spacing={2}>

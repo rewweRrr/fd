@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles';
 import { ruRU } from '@mui/material/locale';
 import { MuiButton } from '@/theme/modifiers/button.modifier';
 import { MuiChip } from '@/theme/modifiers/chip.modifier';
+import { MuiTypography } from '@/theme/modifiers/typography.modifier';
 
 export const theme = createTheme(
   {
@@ -24,7 +25,8 @@ export const theme = createTheme(
     },
     components: {
       MuiButton,
-      MuiChip
+      MuiChip,
+      MuiTypography
     }
   },
   ruRU
