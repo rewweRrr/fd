@@ -10,7 +10,15 @@ export const ProductionTypes = memo(() => {
           ДЛЯ ВСЕХ ВИДОВ ПРОИЗВОДСТВ
         </Typography>
         <Stack gap={2} direction={{ sx: 'column', md: 'row' }} alignItems='center' justifyContent='center'>
-          <Stack rowGap={2} p={2} bgcolor='#9bd32e' height={504} width='100%' maxWidth={594} position='relative'>
+          <Stack
+            rowGap={2}
+            p={2}
+            bgcolor='#9bd32e'
+            height={{ xs: 350, md: 504 }}
+            width='100%'
+            maxWidth={594}
+            position='relative'
+          >
             <Typography fontSize={{ xs: 14, md: 28 }} fontWeight={700} textTransform='uppercase'>
               ДИСКРЕТНЫЕ
             </Typography>
@@ -56,7 +64,15 @@ export const ProductionTypes = memo(() => {
               />
             </Box>
           </Stack>
-          <Stack rowGap={2} p={2} bgcolor='#9bd32e' height={504} width='100%' maxWidth={594} position='relative'>
+          <Stack
+            rowGap={2}
+            p={2}
+            bgcolor='#9bd32e'
+            height={{ xs: 350, md: 504 }}
+            width='100%'
+            maxWidth={594}
+            position='relative'
+          >
             <Typography fontSize={{ xs: 14, md: 28 }} fontWeight={700} textTransform='uppercase'>
               НЕПРЕРЫВНЫЕ
             </Typography>
