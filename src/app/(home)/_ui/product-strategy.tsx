@@ -5,7 +5,7 @@ import Image from 'next/image';
 export const ProductStrategy = memo(() => {
   return (
     <Container maxWidth='xl'>
-      <Stack rowGap={4} mt={10}>
+      <Stack rowGap={4}>
         <Typography variant='h2' textAlign='center'>
           СТРАТЕГИЯ РАЗВИТИЯ ПРОДУКТА
         </Typography>

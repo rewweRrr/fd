@@ -5,7 +5,7 @@ import Image from 'next/image';
 export const StickyImages = memo(() => {
   return (
     <Container maxWidth='xl'>
-      <Stack alignItems='center' mt={10}>
+      <Stack alignItems='center'>
         <Box position='sticky' top={86} height={{ xs: 200, sm: 350, md: 532 }} width='100%'>
           <Image src='/home/slider1.png' alt='' fill style={{ objectFit: 'contain' }} sizes='100vw' />
         </Box>

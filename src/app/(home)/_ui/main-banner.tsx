@@ -5,8 +5,8 @@ import { DemoButton } from '@/components/demo-button';
 export const MainBanner = memo(() => {
   return (
     <Container maxWidth='xl'>
-      <Stack alignItems='center' justifyContent='center' rowGap={5} pt={12} pb={8}>
-        <Typography variant='h1' textAlign='center'>
+      <Stack alignItems='center' justifyContent='center' rowGap={5}>
+        <Typography variant='h1' fontSize={{ xs: 26, md: 42 }} textAlign='center'>
           Цифровое решение <br /> для автоматизации <br /> производства
         </Typography>
         <DemoButton size='large' />

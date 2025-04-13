@@ -56,7 +56,7 @@ export const FeedbackForm = memo(() => {
 
   return (
     <Container maxWidth='xl'>
-      <Stack rowGap={4} alignItems='center' maxWidth={620} margin='0 auto' mt={10}>
+      <Stack rowGap={4} alignItems='center' maxWidth={620} margin='0 auto'>
         <Stack rowGap={4}>
           <Typography variant='h2' textAlign='center'>
             Закажите демо

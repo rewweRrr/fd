@@ -5,7 +5,7 @@ import { BannerCard } from '@/app/hardware/_ui/banner-card';
 import { useInView } from 'react-intersection-observer';
 
 export const BannerCardList = memo(() => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2, delay: 500 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2, delay: 300 });
 
   return (
     <Grid container spacing={2} ref={ref}>
@@ -20,7 +20,7 @@ export const BannerCardList = memo(() => {
         </Grow>
       </Grid>
       <Grid size={{ xs: 12, md: 4 }}>
-        <Grow in={inView} style={{ transformOrigin: '0 0 0' }} {...(inView ? { timeout: 1000 } : {})}>
+        <Grow in={inView} style={{ transformOrigin: '0 0 0' }} {...(inView ? { timeout: 500 } : {})}>
           <BannerCard
             title='6 часов автономного сбора данных'
             subTitle='Сохранение показателей конечной продукции и событий на линии'
@@ -30,7 +30,7 @@ export const BannerCardList = memo(() => {
         </Grow>
       </Grid>
       <Grid size={{ xs: 12, md: 4 }}>
-        <Grow in={inView} style={{ transformOrigin: '0 0 0' }} {...(inView ? { timeout: 2000 } : {})}>
+        <Grow in={inView} style={{ transformOrigin: '0 0 0' }} {...(inView ? { timeout: 1000 } : {})}>
           <BannerCard
             title='Подключение по WIFI'
             subTitle='Пересылка данных на сервер дистанционно или по проводному Ethernet'

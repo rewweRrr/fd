@@ -7,17 +7,23 @@ export const MuiTypography: Components<Theme>['MuiTypography'] = {
         {
           props: { variant: 'h1' },
           style: ({ theme }) => ({
-            fontSize: theme.breakpoints.up('md') ? 50 : 26,
             fontWeight: theme.typography.fontWeightBold,
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            fontSize: 50,
+            [theme.breakpoints.down('md')]: {
+              fontSize: 26
+            }
           })
         },
         {
           props: { variant: 'h2' },
           style: ({ theme }) => ({
-            fontSize: theme.breakpoints.up('md') ? 40 : 26,
+            fontSize: 40,
             fontWeight: theme.typography.fontWeightBold,
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            [theme.breakpoints.down('md')]: {
+              fontSize: 26
+            }
           })
         }
       ]

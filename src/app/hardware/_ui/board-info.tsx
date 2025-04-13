@@ -13,7 +13,7 @@ interface Props {
 }
 
 export const BoardInfo = memo<Props>(({ imageSrc, title, chars, variant = 'default' }) => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2, delay: 500 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2, delay: 200 });
   const {
     props: { srcSet }
   } = getImageProps({ alt: '', width: 580, height: 312, src: imageSrc });
@@ -42,7 +42,7 @@ export const BoardInfo = memo<Props>(({ imageSrc, title, chars, variant = 'defau
   }
 
   return (
-    <Fade in={inView} ref={ref}>
+    <Fade in={inView} ref={ref} timeout={300}>
       <Box
         display='grid'
         gridTemplateColumns={{ md: '1fr 1fr' }}
