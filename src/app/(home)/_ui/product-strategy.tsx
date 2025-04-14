@@ -49,7 +49,7 @@ export const ProductStrategy = memo(() => {
                 </Typography>
               }
             />
-            <Typography fontSize={22} fontWeight={700}>
+            <Typography fontSize={{xs: 22, md: 18, lg: 22}} fontWeight={700}>
               Предиктивная аналитика
             </Typography>
             <Typography fontSize={16}>
@@ -75,7 +75,7 @@ export const ProductStrategy = memo(() => {
                 </Typography>
               }
             />
-            <Typography fontSize={22} fontWeight={700}>
+            <Typography fontSize={{xs: 22, md: 18, lg: 22}} fontWeight={700}>
               Искусственный интеллект
             </Typography>
             <Typography fontSize={16}>
