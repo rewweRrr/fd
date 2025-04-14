@@ -9,19 +9,34 @@ import { Footer } from '@/components/footer';
 const fdFont = localFont({
   src: [
     {
-      path: './_fonts/fd-font-montserrat.woff2',
+      path: './_fonts/fd-font-montserrat-cyrillic.woff2',
       weight: '400',
-      style: 'normal'
+      style: 'normal',
     },
     {
-      path: './_fonts/fd-font-montserrat-bold.woff2',
+      path: './_fonts/fd-font-montserrat-latin.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './_fonts/fd-font-montserrat-cyrillic.woff2',
       weight: '500',
-      style: 'normal'
+      style: 'normal',
     },
     {
-      path: './_fonts/fd-font-montserrat-bold.woff2',
+      path: './_fonts/fd-font-montserrat-latin.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './_fonts/fd-font-montserrat-cyrillic.woff2',
       weight: '600',
-      style: 'normal'
+      style: 'normal',
+    },
+    {
+      path: './_fonts/fd-font-montserrat-latin.woff2',
+      weight: '600',
+      style: 'normal',
     },
     {
       path: './_fonts/fd-font-druk.woff',
@@ -30,7 +45,8 @@ const fdFont = localFont({
     }
   ],
   display: 'swap',
-  variable: '--font-fd'
+  variable: '--font-fd',
+  adjustFontFallback: 'Arial'
 });
 
 export const metadata: Metadata = {

@@ -1,12 +1,13 @@
 import { Header } from '@/components/header/header';
 import { Marquee } from '@/components/marquee';
-import { ImagesBanner } from '@/app/(home)/_ui/images-banner';
-import { MainBanner } from '@/app/(home)/_ui/main-banner';
-import { StickyImages } from '@/app/(home)/_ui/sticky-images';
-import { ProductStrategy } from '@/app/(home)/_ui/product-strategy';
-import { FeedbackForm } from '@/app/(home)/_ui/feedback-form';
+import { ImagesBanner } from './_ui/images-banner';
+import { MainBanner } from './_ui/main-banner';
+import { StickyImages } from './_ui/sticky-images';
+import { ProductStrategy } from './_ui/product-strategy';
+import { FeedbackForm } from './_ui/feedback-form';
 import { Stack } from '@mui/material';
-import { ProductionTypes } from '@/app/(home)/_ui/production-types';
+import { ProductionTypes } from './_ui/production-types';
+import { DemoBanner } from './_ui/demo-banner';
 
 const MARQUEE_LIST = ['ИНДУСТРИЯ 4.0', 'ПРЕДИКТИВНАЯ АНАЛИТИКА', 'ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ'];
 
@@ -20,6 +21,7 @@ export default function Home() {
         <ImagesBanner />
         <StickyImages />
         <ProductStrategy />
+        <DemoBanner />
         <ProductionTypes />
         <FeedbackForm />
       </Stack>
