@@ -2,6 +2,20 @@ import { ReactNode } from 'react';
 import { Box } from '@mui/material';
 import { getImageProps } from 'next/image';
 import { getBackgroundImage } from '@/utils/image.utils';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Аппаратный комплекс',
+  description: 'Подключение оборудования осуществляется при помощи платы сбора и ретрансляции данных | Factory Director',
+  keywords: [
+    'Factory Director',
+    'Агрегация и ретрансляция данных',
+    'Подключение по WIFI',
+    'Интерфейс A1',
+    'Термопара',
+    'Внедрение на производства'
+  ]
+};
 
 export default function Layout({
   children

@@ -11,32 +11,32 @@ const fdFont = localFont({
     {
       path: './_fonts/fd-font-montserrat-cyrillic.woff2',
       weight: '400',
-      style: 'normal',
+      style: 'normal'
     },
     {
       path: './_fonts/fd-font-montserrat-latin.woff2',
       weight: '400',
-      style: 'normal',
+      style: 'normal'
     },
     {
       path: './_fonts/fd-font-montserrat-cyrillic.woff2',
       weight: '500',
-      style: 'normal',
+      style: 'normal'
     },
     {
       path: './_fonts/fd-font-montserrat-latin.woff2',
       weight: '500',
-      style: 'normal',
+      style: 'normal'
     },
     {
       path: './_fonts/fd-font-montserrat-cyrillic.woff2',
       weight: '600',
-      style: 'normal',
+      style: 'normal'
     },
     {
       path: './_fonts/fd-font-montserrat-latin.woff2',
       weight: '600',
-      style: 'normal',
+      style: 'normal'
     },
     {
       path: './_fonts/fd-font-druk.woff',
@@ -50,25 +50,17 @@ const fdFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Factory Director',
-  description: 'Цифровое решение для автоматизации производства',
-  keywords: [
-    'Factory Director',
-    'автоматизации производства',
-    '+10% к выручке',
-    'управление производством',
-    'эффективность заказов',
-    'производственный процесс',
-    'Внедрение на производства',
-    'Предиктивная аналитика',
-    'Искусственный интеллект'
-  ],
+  title: {
+    template: '%s | Factory Director',
+    default: 'Factory Director'
+  },
+  description: 'Factory Director Цифровое решение для автоматизации производства',
   openGraph: {
+    type: 'website',
     title: 'Factory Director',
     description: 'Цифровое решение для автоматизации производства',
-    images: [{ url: '/factory_director_log.svg' }],
-    url: 'https://fd-test-sigma.vercel.app',
-    type: 'website'
+    images: { url: '/factory_director_log.webp', width: 147, height: 34 },
+    url: process.env.SITE_URL || 'https://fd-test-sigma.vercel.app'
   }
 };
 
