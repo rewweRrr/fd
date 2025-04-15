@@ -5,6 +5,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { theme } from '@/theme/theme';
 import { Footer } from '@/components/footer';
+import { SITE_URL } from '@/constants/constants';
 
 const fdFont = localFont({
   src: [
@@ -59,8 +60,10 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Factory Director',
     description: 'Цифровое решение для автоматизации производства',
-    images: { url: '/factory_director_log.webp', width: 147, height: 34 },
-    url: process.env.SITE_URL || 'https://fd-test-sigma.vercel.app'
+    url: SITE_URL,
+    siteName: 'Factory Director',
+    images: { url: `${SITE_URL}/factory_director_log.webp`, width: 147, height: 34 },
+    locale: 'ru_RU'
   }
 };
 
