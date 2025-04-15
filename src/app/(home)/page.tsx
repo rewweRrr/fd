@@ -8,6 +8,7 @@ import { FeedbackForm } from './_ui/feedback-form';
 import { Stack } from '@mui/material';
 import { ProductionTypes } from './_ui/production-types';
 import { DemoBanner } from './_ui/demo-banner';
+import { ConnectionStages } from '@/app/(home)/_ui/connection-stages/connection-stages';
 
 const MARQUEE_LIST = ['ИНДУСТРИЯ 4.0', 'ПРЕДИКТИВНАЯ АНАЛИТИКА', 'ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ'];
 
@@ -16,12 +17,15 @@ export default function Home() {
     <>
       <Header />
       <Marquee items={MARQUEE_LIST} repeatCount={4} />
-      <Stack mt={11} rowGap={{ xs: 4, md: 10 }} pb={{ xs: 4, md: 8 }}>
+      <Stack mt={11} rowGap={{ xs: 4, md: 10 }}>
         <MainBanner />
         <ImagesBanner />
         <StickyImages />
         <ProductStrategy />
         <DemoBanner />
+      </Stack>
+      <ConnectionStages/>
+      <Stack mt={{ xs: 4, md: 10 }} rowGap={{ xs: 4, md: 10 }} pb={{ xs: 4, md: 8 }}>
         <ProductionTypes />
         <FeedbackForm />
       </Stack>
