@@ -9,7 +9,6 @@ import { Stack } from '@mui/material';
 import { ProductionTypes } from './_ui/production-types';
 import { DemoBanner } from './_ui/demo-banner';
 import { ConnectionStages } from '@/app/(home)/_ui/connection-stages/connection-stages';
-import { WorkSimplification } from '@/app/(home)/_ui/work-simplification/work-simplification';
 
 const MARQUEE_LIST = ['ИНДУСТРИЯ 4.0', 'ПРЕДИКТИВНАЯ АНАЛИТИКА', 'ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ'];
 
@@ -23,7 +22,7 @@ export default function Home() {
         <ImagesBanner />
         <StickyImages />
         <ProductStrategy />
-        <WorkSimplification />
+        {/*<WorkSimplification />*/}
         <DemoBanner />
       </Stack>
       <ConnectionStages />
