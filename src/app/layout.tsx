@@ -73,7 +73,7 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang='ru' className={fdFont.variable} style={{ scrollBehavior: 'smooth' }}>
+    <html lang='ru' className={fdFont.variable} style={{ scrollBehavior: 'smooth', scrollPaddingTop: '180px' }}>
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>

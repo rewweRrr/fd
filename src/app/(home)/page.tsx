@@ -5,10 +5,11 @@ import { MainBanner } from './_ui/main-banner';
 import { StickyImages } from './_ui/sticky-images';
 import { ProductStrategy } from './_ui/product-strategy';
 import { FeedbackForm } from './_ui/feedback-form';
-import { Stack } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import { ProductionTypes } from './_ui/production-types';
 import { DemoBanner } from './_ui/demo-banner';
 import { ConnectionStages } from '@/app/(home)/_ui/connection-stages/connection-stages';
+import { WorkSimplification } from '@/app/(home)/_ui/work-simplification/work-simplification';
 
 const MARQUEE_LIST = ['ИНДУСТРИЯ 4.0', 'ПРЕДИКТИВНАЯ АНАЛИТИКА', 'ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ'];
 
@@ -22,7 +23,7 @@ export default function Home() {
         <ImagesBanner />
         <StickyImages />
         <ProductStrategy />
-        {/*<WorkSimplification />*/}
+        <Box display={{xs: 'none', md: 'block'}}><WorkSimplification /></Box>
         <DemoBanner />
       </Stack>
       <ConnectionStages />
