@@ -9,7 +9,7 @@ export const MainBanner = memo(() => {
         <Typography variant='h1' fontSize={{ xs: 26, md: 42 }} textAlign='center'>
           Цифровое решение <br /> для автоматизации <br /> производства
         </Typography>
-        <DemoButton size='large' />
+        <DemoButton size='large' sx={{ width: '280px' }} />
       </Stack>
     </Container>
   );

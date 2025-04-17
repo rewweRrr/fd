@@ -173,7 +173,7 @@ export const FeedbackForm = memo(() => {
                 />
               )}
             />
-            <Button variant='contained' size='large' type='submit' sx={{ width: 'fit-content' }} loading={loading}>
+            <Button variant='contained' size='large' type='submit' sx={{ width: '280px' }} loading={loading}>
               Заказать Демо
             </Button>
           </Box>
