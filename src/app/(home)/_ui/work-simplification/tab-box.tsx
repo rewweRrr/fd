@@ -8,9 +8,9 @@ interface Props extends BoxProps, PropsWithChildren {
   textSx?: TypographyProps['sx'];
 }
 
-export const GridBox = memo<Props>(({ title, bgImageSrc, textSx, children, ...rest }) => {
+export const TabBox = memo<Props>(({ title, bgImageSrc, textSx, children, ...rest }) => {
   return (
-    <Box p={2} position='relative' display='flex' {...rest}>
+    <Box p={2} position='relative' display='flex' overflow='hidden' {...rest}>
       {bgImageSrc && <Image src={bgImageSrc} alt='' fill style={{ objectFit: 'cover' }} sizes='100vw' />}
       {children}
       <Typography fontSize={{ xs: 14, md: 20 }} fontWeight={700} textTransform='uppercase' zIndex={2} sx={textSx}>
@@ -20,4 +20,4 @@ export const GridBox = memo<Props>(({ title, bgImageSrc, textSx, children, ...re
   );
 });
 
-GridBox.displayName = 'GridBox';
+TabBox.displayName = 'TabBox';

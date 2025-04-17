@@ -7,33 +7,38 @@ import { AdjusterTab } from '@/app/(home)/_ui/work-simplification/adjuster-tab';
 import { MasterTab } from '@/app/(home)/_ui/work-simplification/master-tab';
 import { ControllerTab } from '@/app/(home)/_ui/work-simplification/controller-tab';
 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import './work-simplification-swiper.css';
+
 export const WorkSimplification = memo(() => {
   const tabs = useMemo(
     () => [
       {
         id: 'director-tab',
         label: 'Руководству',
-        content: <DirectorTab id='director-tab'/>
+        content: <DirectorTab id='director-tab' />
       },
       {
         id: 'operator-tab',
         label: 'Оператору',
-        content: <OperatorTab id='operator-tab'/>
+        content: <OperatorTab id='operator-tab' />
       },
       {
         id: 'adjuster-tab',
         label: 'Наладчику',
-        content: <AdjusterTab id='adjuster-tab'/>
+        content: <AdjusterTab id='adjuster-tab' />
       },
       {
         id: 'master-tab',
         label: 'Мастеру',
-        content: <MasterTab id='master-tab'/>
+        content: <MasterTab id='master-tab' />
       },
       {
         id: 'controller-tab',
         label: 'Контролеру',
-        content: <ControllerTab id='controller-tab'/>
+        content: <ControllerTab id='controller-tab' />
       }
     ],
     []

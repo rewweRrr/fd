@@ -1,0 +1,10 @@
+.fd-swiper-bullets {
+    --swiper-pagination-color: #9bd32e;
+    --swiper-pagination-bottom: auto;
+    position: relative;
+}
+
+.fd-swiper-navigation {
+    --swiper-navigation-size: 36px;
+    --swiper-navigation-color: #9bd32e;
+}
