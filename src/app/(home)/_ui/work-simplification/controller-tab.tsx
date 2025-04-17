@@ -29,7 +29,7 @@ export const ControllerTab = memo<Props>(({ id }) => {
                 src='/home/controller-tab/forms.svg'
                 alt=''
                 fill
-                style={{ objectFit: 'contain', objectPosition: 'bottom', padding: '60px 40px 0' }}
+                style={{ objectFit: 'cover', objectPosition: 'center top', padding: '60px 40px 0' }}
                 sizes='100vw'
               />
             </TabBox>
@@ -40,7 +40,7 @@ export const ControllerTab = memo<Props>(({ id }) => {
                 src='/home/controller-tab/form-constructor.webp'
                 alt=''
                 fill
-                style={{ objectFit: 'contain', objectPosition: 'bottom', padding: '0 40px 40px' }}
+                style={{ objectFit: 'cover', objectPosition: 'left top', padding: '10px 0 0' }}
                 sizes='100vw'
               />
             </TabBox>

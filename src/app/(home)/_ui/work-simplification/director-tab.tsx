@@ -53,7 +53,15 @@ export const DirectorTab = memo<Props>(({ id }) => {
               textSx={{ color: 'primary.contrastText' }}
               height={226}
               bgImageSrc='/home/director-tab/bg-personal-control.webp'
-            />
+            >
+              <Image
+                src='/home/director-tab/ivan_ivanov.svg'
+                alt=''
+                fill
+                style={{ objectFit: 'scale-down', objectPosition: 'bottom left', padding: '0 16px 16px' }}
+                sizes='100vw'
+              />
+            </TabBox>
           </SwiperSlide>
           <SwiperSlide>
             <TabBox height={226} title='Отслеживание аномалий' bgcolor='#f2f2f2'>
@@ -124,7 +132,15 @@ export const DirectorTab = memo<Props>(({ id }) => {
         title='Контроль персонала'
         textSx={{ color: 'primary.contrastText' }}
         bgImageSrc='/home/director-tab/bg-personal-control.webp'
-      />
+      >
+        <Image
+          src='/home/director-tab/ivan_ivanov.svg'
+          alt=''
+          fill
+          style={{ objectFit: 'scale-down', objectPosition: 'bottom left', padding: '0 16px 16px' }}
+          sizes='100vw'
+        />
+      </TabBox>
       <TabBox title='Отслеживание аномалий' bgcolor='#f2f2f2'>
         <Image
           src='/home/director-tab/anomaly-detection.webp'
