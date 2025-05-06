@@ -16,14 +16,14 @@ export default function Contacts() {
               title='Борис Поляк'
               subTitle='Генеральный директор'
               phone='+7 (916) 088-77-34'
-              telegram='@BHtrue'
+              telegram='BHtrue'
             />
             <ContactCard
               imageSrc='/contacts/alexey_photo.webp'
               title='Алексей Зенькович'
               subTitle='Директор по развитию'
               phone='+7 (916) 698-27-77'
-              telegram='@alekseizenkovich'
+              telegram='alekseizenkovich'
             />
           </Stack>
         </Container>
