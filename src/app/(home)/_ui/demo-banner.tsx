@@ -46,10 +46,12 @@ export const DemoBanner = memo(() => {
             />
           </Stack>
           {!mobile && (
-            <Typography fontSize={20} sx={{ color: 'primary.contrastText' }} alignSelf='end' p={4}>
+            <Typography fontSize={20} fontWeight={500} sx={{ color: 'primary.contrastText' }} alignSelf='end' p={4}>
               Борис Поляк
               <br />
-              СЕО Factory Director, ИФТТ РАН
+              Тимлид разработки
+              <br />
+              Factory Director, ИФТТ РАН
             </Typography>
           )}
         </Stack>
