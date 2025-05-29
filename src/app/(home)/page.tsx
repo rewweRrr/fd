@@ -4,7 +4,6 @@ import { ImagesBanner } from './_ui/images-banner';
 import { MainBanner } from './_ui/main-banner';
 import { StickyImages } from './_ui/sticky-images';
 import { ProductStrategy } from './_ui/product-strategy';
-import { FeedbackForm } from './_ui/feedback-form';
 import { Stack } from '@mui/material';
 import { ProductionTypes } from './_ui/production-types';
 import { DemoBanner } from './_ui/demo-banner';
