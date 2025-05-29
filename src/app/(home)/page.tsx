@@ -29,7 +29,7 @@ export default function Home() {
       <ConnectionStages />
       <Stack mt={{ xs: 4, md: 10 }} rowGap={{ xs: 4, md: 10 }} pb={{ xs: 4, md: 8 }}>
         <ProductionTypes />
-        <FeedbackForm />
+        {/*<FeedbackForm />*/}
       </Stack>
     </>
   );
