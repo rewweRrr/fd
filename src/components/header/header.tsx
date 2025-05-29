@@ -7,7 +7,7 @@ export const Header = memo(() => {
   return (
     <AppBar position='sticky' sx={{ bgcolor: '#fff' }} variant='elevation'>
       <Container maxWidth='xl'>
-        <Stack direction='row' columnGap={3} justifyContent='space-between' alignItems='center' py={3}>
+        <Stack direction='row' justifyContent='space-between' alignItems='center' py={3}>
           <Logo />
           <HeaderContent />
         </Stack>

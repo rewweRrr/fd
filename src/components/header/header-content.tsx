@@ -16,7 +16,7 @@ export const HeaderContent = memo(() => {
       <Box>
         <Navigation />
       </Box>
-      <Stack direction='row' columnGap={1}>
+      <Stack direction='row' columnGap={1} flexShrink={0}>
         <PresentationButton />
         <DemoButton />
       </Stack>

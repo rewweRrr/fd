@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { Fade, Stack, Typography } from '@mui/material';
+import { Fade, Link, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
 
 interface Props {
@@ -22,15 +22,19 @@ export const ContactCard = memo<Props>(({ imageSrc, title, subTitle, phone, tele
           </Typography>
           <Stack direction='row' columnGap={1}>
             <Image src='/icons/phone-icon.svg' alt='' width={24} height={24} />
-            <Typography variant='body1' fontSize={18}>
-              {phone}
-            </Typography>
+            <Link href={`tel:${phone}`} underline='hover'>
+              <Typography variant='body1' fontSize={18}>
+                {phone}
+              </Typography>
+            </Link>
           </Stack>
           <Stack direction='row' columnGap={1}>
             <Image src='/icons/telegram-icon.svg' alt='' width={24} height={24} />
-            <Typography variant='body1' fontSize={18}>
-              {telegram}
-            </Typography>
+            <Link href={`https://t.me/${telegram}`} target='_blank' underline='hover'>
+              <Typography variant='body1' fontSize={18}>
+                @{telegram}
+              </Typography>
+            </Link>
           </Stack>
         </Stack>
       </Stack>
