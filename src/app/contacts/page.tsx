@@ -14,7 +14,7 @@ export default function Contacts() {
             <ContactCard
               imageSrc='/contacts/boris_photo.webp'
               title='Борис Поляк'
-              subTitle='Генеральный директор'
+              subTitle='Тимлид разработки'
               phone='+7 (916) 088-77-34'
               telegram='BHtrue'
             />

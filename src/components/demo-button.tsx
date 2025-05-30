@@ -11,7 +11,7 @@ type Props = {
 
 export const DemoButton = memo<Props>(({ variant = 'contained', ...rest }) => {
   return (
-    <Button variant={variant} component={NextLink} href='/#feedback-form' {...rest}>
+    <Button variant={variant} component={NextLink} href='/contacts' {...rest}>
       Заказать Демо
     </Button>
   );
