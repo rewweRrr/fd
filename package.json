@@ -7,7 +7,8 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint . --max-warnings=0",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -32,6 +33,14 @@
     "@types/react-dom": "19.2.3",
     "eslint": "^9",
     "eslint-config-next": "^16.0.3",
+    "lint-staged": "^16.2.6",
+    "simple-git-hooks": "^2.13.1",
     "typescript": "^5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,mjs,css,html}": "eslint --fix --max-warnings=0"
   }
 }
