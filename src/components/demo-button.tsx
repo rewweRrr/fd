@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { Button, ButtonProps } from '@mui/material';
-import NextLink, { LinkProps } from 'next/link';
+import NextLink, { LinkProps } from '@/components/link';
 
 type Props = {
   size?: ButtonProps['size'];

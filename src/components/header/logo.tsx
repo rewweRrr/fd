@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { ButtonBase } from '@mui/material';
-import NextLink from 'next/link';
+import NextLink from '@/components/link';
 import Image from 'next/image';
 
 export const Logo = memo(() => {

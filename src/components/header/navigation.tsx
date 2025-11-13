@@ -1,7 +1,7 @@
 'use client';
 import { memo } from 'react';
 import { Button, Typography } from '@mui/material';
-import NextLink from 'next/link';
+import NextLink from '@/components/link';
 import { usePathname } from 'next/navigation';
 
 export const Navigation = memo(() => {

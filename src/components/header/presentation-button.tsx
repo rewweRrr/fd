@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { Button } from '@mui/material';
-import NextLink, { LinkProps } from 'next/link';
+import NextLink, { LinkProps } from '@/components/link';
 
 interface Props {
   onClick?: LinkProps['onClick'];

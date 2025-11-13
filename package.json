@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --webpack",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -16,22 +16,21 @@
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.1",
     "@mui/material-nextjs": "^7.0.0",
-    "next": "15.2.5",
+    "next": "^16.0.3",
     "next-sitemap": "^4.2.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
     "react-hook-form": "^7.55.0",
     "react-imask": "^7.6.1",
-    "react-intersection-observer": "^9.16.0",
+    "react-intersection-observer": "^10.0.0",
     "swiper": "^11.2.6"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/node": "^24.10.1",
+    "@types/react": "19.2.4",
+    "@types/react-dom": "19.2.3",
     "eslint": "^9",
-    "eslint-config-next": "15.2.5",
+    "eslint-config-next": "^16.0.3",
     "prettier": "^3.5.3",
     "typescript": "^5"
   }
