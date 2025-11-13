@@ -1,11 +1,11 @@
-import type { Breakpoint } from '@mui/system'
+import type { ContainerProps } from '@mui/material'
 import { Container, Stack, Typography } from '@mui/material'
 import { memo } from 'react'
 
 interface Props {
   title: string
   description?: string
-  maxWidth: Breakpoint
+  maxWidth: ContainerProps['maxWidth']
 }
 
 export const SubHeader = memo<Props>(({ title, description, maxWidth }) => {

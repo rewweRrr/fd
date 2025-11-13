@@ -1,0 +1,13 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "ignore": [
+    "next-sitemap.config.js",
+    "src/types/index.ts",
+    "src/types/theme.types.ts",
+    "src/app/(home)/_ui/feedback-form.tsx"
+  ],
+  "ignoreDependencies": [
+    "react-hook-form",
+    "react-imask"
+  ]
+}

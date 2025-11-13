@@ -2,12 +2,17 @@
   "name": "factory-director-landing",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "^24",
+    "npm": "^11"
+  },
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "eslint . --max-warnings=0",
+    "check:lint": "eslint . --max-warnings=0",
+    "check:knip": "knip --max-issues=0",
     "lint-staged": "lint-staged"
   },
   "dependencies": {
@@ -33,9 +38,10 @@
     "@types/react-dom": "19.2.3",
     "eslint": "^9",
     "eslint-config-next": "^16.0.3",
+    "knip": "^5.69.1",
     "lint-staged": "^16.2.6",
     "simple-git-hooks": "^2.13.1",
-    "typescript": "^5"
+    "typescript": "^5.9.3"
   },
   "simple-git-hooks": {
     "pre-commit": "npm run lint-staged"

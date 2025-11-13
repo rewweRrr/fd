@@ -4,7 +4,7 @@ import { Box, Stack, Typography } from '@mui/material'
 import { memo } from 'react'
 import { StageChip } from '@/app/(home)/_ui/connection-stages/stage-chip'
 
-export interface StageProps {
+interface StageProps {
   title: string
   chipText: string
   items: string[]
