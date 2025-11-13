@@ -13,7 +13,7 @@ export const MuiChip: Components<Theme>['MuiChip'] = {
       props: { variant: 'square-fit' },
       style: ({ theme }) => ({
         width: 'fit-content',
-        borderRadius: 2 * theme.shape.borderRadius,
+        borderRadius: typeof theme.shape.borderRadius === 'number' ? 2 * theme.shape.borderRadius : theme.shape.borderRadius,
       }),
     },
   ],
