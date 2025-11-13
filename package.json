@@ -26,12 +26,12 @@
     "swiper": "^11.2.6"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^6.2.0",
     "@types/node": "^24.10.1",
     "@types/react": "19.2.4",
     "@types/react-dom": "19.2.3",
     "eslint": "^9",
     "eslint-config-next": "^16.0.3",
-    "prettier": "^3.5.3",
     "typescript": "^5"
   }
 }

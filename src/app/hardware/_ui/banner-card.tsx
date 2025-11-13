@@ -1,14 +1,16 @@
-import { memo, Ref } from 'react';
-import { Stack, Typography, TypographyProps } from '@mui/material';
-import Image from 'next/image';
+import type { TypographyProps } from '@mui/material'
+import type { Ref } from 'react'
+import { Stack, Typography } from '@mui/material'
+import Image from 'next/image'
+import { memo } from 'react'
 
 interface Props {
-  title: string;
-  subTitle: string;
-  backgroundColor: string;
-  imageSrc: string;
-  color?: TypographyProps['color'];
-  ref?: Ref<HTMLDivElement>;
+  title: string
+  subTitle: string
+  backgroundColor: string
+  imageSrc: string
+  color?: TypographyProps['color']
+  ref?: Ref<HTMLDivElement>
 }
 
 export const BannerCard = memo<Props>(({ imageSrc, title, subTitle, color, backgroundColor, ref, ...other }) => {
@@ -21,15 +23,15 @@ export const BannerCard = memo<Props>(({ imageSrc, title, subTitle, color, backg
       rowGap={1}
       {...other}
     >
-      <Typography variant='body1' fontSize={20} fontWeight={700} textTransform='uppercase' color={color}>
+      <Typography variant="body1" fontSize={20} fontWeight={700} textTransform="uppercase" color={color}>
         {title}
       </Typography>
-      <Typography variant='body1' fontSize={16} fontWeight={500} color={color}>
+      <Typography variant="body1" fontSize={16} fontWeight={500} color={color}>
         {subTitle}
       </Typography>
-      <Image src={imageSrc} alt='' fill sizes='100vw' style={{ objectPosition: 'bottom', objectFit: 'contain' }} />
+      <Image src={imageSrc} alt="" fill sizes="100vw" style={{ objectPosition: 'bottom', objectFit: 'contain' }} />
     </Stack>
-  );
-});
+  )
+})
 
-BannerCard.displayName = 'BannerCard';
+BannerCard.displayName = 'BannerCard'

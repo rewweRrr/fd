@@ -1,13 +1,11 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  // turbopack: {
-  //   root: __dirname
-  // },
+  outputFileTracingRoot: __dirname,
   logging: {
     fetches: {
-      fullUrl: true
-    }
+      fullUrl: true,
+    },
   },
   async headers() {
     return [
@@ -16,30 +14,30 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable' // 1 год
-          }
-        ]
+            value: 'public, max-age=31536000, immutable', // 1 год
+          },
+        ],
       },
       {
         source: '/static/(.*)',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable' // 1 год
-          }
-        ]
+            value: 'public, max-age=31536000, immutable', // 1 год
+          },
+        ],
       },
       {
         source: '/(.*).(jpg|jpeg|png|gif|webp|svg|ico)',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable' // 1 год
-          }
-        ]
-      }
-    ];
-  }
-};
+            value: 'public, max-age=31536000, immutable', // 1 год
+          },
+        ],
+      },
+    ]
+  },
+}
 
-export default nextConfig;
+export default nextConfig

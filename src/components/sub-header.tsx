@@ -1,28 +1,28 @@
-import { memo } from 'react';
-import { Container, Stack, Typography } from '@mui/material';
-import { Breakpoint } from '@mui/system';
+import type { Breakpoint } from '@mui/system'
+import { Container, Stack, Typography } from '@mui/material'
+import { memo } from 'react'
 
 interface Props {
-  title: string;
-  description?: string;
-  maxWidth: Breakpoint;
+  title: string
+  description?: string
+  maxWidth: Breakpoint
 }
 
 export const SubHeader = memo<Props>(({ title, description, maxWidth }) => {
   return (
     <Container maxWidth={maxWidth}>
-      <Stack direction={{ md: 'row' }} columnGap={16} rowGap={4} alignItems='center'>
-        <Typography variant='h1' flexBasis={{ md: 520 }}>
+      <Stack direction={{ md: 'row' }} columnGap={16} rowGap={4} alignItems="center">
+        <Typography variant="h1" flexBasis={{ md: 520 }}>
           {title}
         </Typography>
         {description && (
-          <Typography variant='h6' fontSize={20} flexBasis={{ md: 600 }}>
+          <Typography variant="h6" fontSize={20} flexBasis={{ md: 600 }}>
             {description}
           </Typography>
         )}
       </Stack>
     </Container>
-  );
-});
+  )
+})
 
-SubHeader.displayName = 'SubHeader';
+SubHeader.displayName = 'SubHeader'

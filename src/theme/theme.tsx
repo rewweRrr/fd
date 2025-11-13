@@ -1,33 +1,33 @@
-'use client';
-import { createTheme } from '@mui/material/styles';
-import { ruRU } from '@mui/material/locale';
-import { MuiButton } from '@/theme/modifiers/button.modifier';
-import { MuiChip } from '@/theme/modifiers/chip.modifier';
-import { MuiTypography } from '@/theme/modifiers/typography.modifier';
+'use client'
+import { ruRU } from '@mui/material/locale'
+import { createTheme } from '@mui/material/styles'
+import { MuiButton } from '@/theme/modifiers/button.modifier'
+import { MuiChip } from '@/theme/modifiers/chip.modifier'
+import { MuiTypography } from '@/theme/modifiers/typography.modifier'
 
 export const theme = createTheme(
   {
     cssVariables: {
-      colorSchemeSelector: 'class'
+      colorSchemeSelector: 'class',
     },
     typography: {
-      fontFamily: 'var(--font-fd)'
+      fontFamily: 'var(--font-fd)',
     },
     colorSchemes: { light: true },
     palette: {
       primary: {
         main: '#141414',
-        light: '#f3f3f3'
+        light: '#f3f3f3',
       },
       secondary: {
-        main: '#f3f3f3'
-      }
+        main: '#f3f3f3',
+      },
     },
     components: {
       MuiButton,
       MuiChip,
-      MuiTypography
-    }
+      MuiTypography,
+    },
   },
-  ruRU
-);
+  ruRU,
+)

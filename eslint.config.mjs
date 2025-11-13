@@ -1,8 +1,9 @@
-import { defineConfig, globalIgnores } from 'eslint/config';
-import nextCoreWebVitals from 'eslint-config-next/core-web-vitals';
-import nextTypescript from 'eslint-config-next/typescript';
+import antfu from '@antfu/eslint-config'
+import nextCoreWebVitals from 'eslint-config-next/core-web-vitals'
+import nextTypescript from 'eslint-config-next/typescript'
+import { globalIgnores } from 'eslint/config'
 
-const eslintConfig = defineConfig([
+const eslintConfig = antfu([
   ...nextCoreWebVitals,
   ...nextTypescript,
   // Override default ignores of eslint-config-next.
@@ -11,8 +12,8 @@ const eslintConfig = defineConfig([
     '.next/**',
     'out/**',
     'build/**',
-    'next-env.d.ts'
-  ])
-]);
+    'next-env.d.ts',
+  ]),
+])
 
-export default eslintConfig;
+export default eslintConfig

@@ -1,27 +1,28 @@
-'use client';
-import { memo } from 'react';
-import { Box, Stack, useMediaQuery, useTheme } from '@mui/material';
-import { Navigation } from './navigation';
-import { DemoButton } from '../demo-button';
-import { HeaderMenu } from './header-menu';
-import { PresentationButton } from './presentation-button';
+'use client'
+import { Box, Stack, useMediaQuery, useTheme } from '@mui/material'
+import { memo } from 'react'
+import { DemoButton } from '../demo-button'
+import { HeaderMenu } from './header-menu'
+import { Navigation } from './navigation'
+import { PresentationButton } from './presentation-button'
 
 export const HeaderContent = memo(() => {
-  const theme = useTheme();
-  const mobile = useMediaQuery(theme.breakpoints.down('md'));
+  const theme = useTheme()
+  const mobile = useMediaQuery(theme.breakpoints.down('md'))
 
-  if (mobile) return <HeaderMenu></HeaderMenu>;
+  if (mobile)
+    return <HeaderMenu></HeaderMenu>
   return (
     <>
       <Box>
         <Navigation />
       </Box>
-      <Stack direction='row' columnGap={1} flexShrink={0}>
+      <Stack direction="row" columnGap={1} flexShrink={0}>
         <PresentationButton />
         <DemoButton />
       </Stack>
     </>
-  );
-});
+  )
+})
 
-HeaderContent.displayName = 'HeaderContent';
+HeaderContent.displayName = 'HeaderContent'

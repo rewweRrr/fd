@@ -1,35 +1,37 @@
-import { FeedbackFormDto } from '@/dto/feedback-form.dto';
+import type { FeedbackFormDto } from '@/dto/feedback-form.dto'
+import process from 'node:process'
 
 export async function POST(request: Request) {
-  const botToken = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
+  const botToken = process.env.TELEGRAM_BOT_TOKEN
+  const chatId = process.env.TELEGRAM_CHAT_ID
 
-  const data: FeedbackFormDto = await request.json();
+  const data: FeedbackFormDto = await request.json()
 
   if (!data.name || !data.phoneNumber || !data.company)
-    return Response.json({ error: 'Input is invalid' }, { status: 400 });
+    return Response.json({ error: 'Input is invalid' }, { status: 400 })
 
   try {
     const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(
         {
           chat_id: chatId,
-          text: data
+          text: data,
         },
         null,
-        2
-      )
-    });
+        2,
+      ),
+    })
     if (res.status === 200) {
-      return Response.json({ message: 'Ok!' });
+      return Response.json({ message: 'Ok!' })
     }
-  } catch {
-    return Response.json({ error: 'Something went wrong' }, { status: 500 });
+  }
+  catch {
+    return Response.json({ error: 'Something went wrong' }, { status: 500 })
   }
 
-  return Response.json({ error: 'Something went wrong' }, { status: 500 });
+  return Response.json({ error: 'Something went wrong' }, { status: 500 })
 }

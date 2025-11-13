@@ -1,12 +1,12 @@
-'use client';
+'use client'
 
-import { Fragment, memo, useMemo } from 'react';
-import { Box, keyframes, Stack, Typography } from '@mui/material';
+import { Box, keyframes, Stack, Typography } from '@mui/material'
+import { Fragment, memo, useMemo } from 'react'
 
-type Props = {
-  items: string[];
-  repeatCount?: number;
-};
+interface Props {
+  items: string[]
+  repeatCount?: number
+}
 
 const marqueeKeyframes = keyframes`
     0% {
@@ -15,40 +15,40 @@ const marqueeKeyframes = keyframes`
     100% {
       transform: translateX(-100%);
     }
-  `;
+  `
 
 export const Marquee = memo<Props>(({ items, repeatCount = 1 }) => {
   const fullList = useMemo(() => {
-    const result = [...items];
-    let count = repeatCount <= 0 ? 1 : repeatCount;
+    const result = [...items]
+    let count = repeatCount <= 0 ? 1 : repeatCount
 
     while (count > 1) {
-      count--;
-      result.push(...items);
+      count--
+      result.push(...items)
     }
-    return result;
-  }, [items, repeatCount]);
+    return result
+  }, [items, repeatCount])
 
   return (
     <Box sx={{ width: '100%', overflow: 'hidden', whiteSpace: 'nowrap', position: 'absolute' }}>
       <Stack
-        direction='row'
+        direction="row"
         columnGap={4}
         sx={{
-          py: 2,
-          animation: `${marqueeKeyframes} 30s linear infinite`,
+          'py': 2,
+          'animation': `${marqueeKeyframes} 30s linear infinite`,
           '&:hover': {
-            animationPlayState: 'paused'
-          }
+            animationPlayState: 'paused',
+          },
         }}
       >
         {fullList.map((item, index) => (
           <Fragment key={index}>
-            <Typography variant='body1' fontWeight={700} textTransform='uppercase'>
+            <Typography variant="body1" fontWeight={700} textTransform="uppercase">
               {item}
             </Typography>
             {index !== fullList.length - 1 && (
-              <Typography variant='body1' fontWeight={700} textTransform='uppercase'>
+              <Typography variant="body1" fontWeight={700} textTransform="uppercase">
                 •
               </Typography>
             )}
@@ -56,7 +56,7 @@ export const Marquee = memo<Props>(({ items, repeatCount = 1 }) => {
         ))}
       </Stack>
     </Box>
-  );
-});
+  )
+})
 
-Marquee.displayName = 'Marquee';
+Marquee.displayName = 'Marquee'

@@ -1,10 +1,10 @@
 declare module '@mui/material/Chip' {
   interface ChipPropsVariantOverrides {
-    'square-fit': true;
+    'square-fit': true
   }
   interface ChipPropsSizeOverrides {
-    large: true;
+    large: true
   }
 }
 
-export {};
+export {}

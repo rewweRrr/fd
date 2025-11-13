@@ -1,24 +1,24 @@
-'use client';
-import { memo } from 'react';
-import { Button, Typography } from '@mui/material';
-import NextLink from '@/components/link';
-import { usePathname } from 'next/navigation';
+'use client'
+import { Button, Typography } from '@mui/material'
+import { usePathname } from 'next/navigation'
+import { memo } from 'react'
+import NextLink from '@/components/link'
 
 export const Navigation = memo(() => {
-  const pathname = usePathname();
+  const pathname = usePathname()
   return (
     <>
-      <Button size='small' component={NextLink} href='/'>
+      <Button size="small" component={NextLink} href="/">
         <Typography fontWeight={pathname === '/' ? 600 : undefined}>Главная</Typography>
       </Button>
-      <Button size='small' component={NextLink} href='/hardware'>
+      <Button size="small" component={NextLink} href="/hardware">
         <Typography fontWeight={pathname === '/hardware' ? 600 : undefined}>Аппаратный комплекс</Typography>
       </Button>
-      <Button size='small' component={NextLink} href='/contacts'>
+      <Button size="small" component={NextLink} href="/contacts">
         <Typography fontWeight={pathname === '/contacts' ? 600 : undefined}>Контакты</Typography>
       </Button>
     </>
-  );
-});
+  )
+})
 
-Navigation.displayName = 'Navigation';
+Navigation.displayName = 'Navigation'

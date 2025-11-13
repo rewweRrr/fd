@@ -1,4 +1,4 @@
-import { Components, Theme } from '@mui/material';
+import type { Components, Theme } from '@mui/material'
 
 export const MuiButton: Components<Theme>['MuiButton'] = {
   styleOverrides: {
@@ -7,9 +7,9 @@ export const MuiButton: Components<Theme>['MuiButton'] = {
       variants: [
         {
           props: { variant: 'contained' },
-          style: { borderRadius: 0 }
-        }
-      ]
-    }
-  }
-};
+          style: { borderRadius: 0 },
+        },
+      ],
+    },
+  },
+}

@@ -1,4 +1,4 @@
-import { Components, Theme } from '@mui/material';
+import type { Components, Theme } from '@mui/material'
 
 export const MuiChip: Components<Theme>['MuiChip'] = {
   variants: [
@@ -6,15 +6,15 @@ export const MuiChip: Components<Theme>['MuiChip'] = {
       props: { size: 'large' },
       style: ({ theme }) => ({
         height: 40,
-        padding: `0 ${theme.spacing(1)}`
-      })
+        padding: `0 ${theme.spacing(1)}`,
+      }),
     },
     {
       props: { variant: 'square-fit' },
       style: ({ theme }) => ({
         width: 'fit-content',
-        borderRadius: 2 * theme.shape.borderRadius
-      })
-    }
-  ]
-};
+        borderRadius: 2 * theme.shape.borderRadius,
+      }),
+    },
+  ],
+}

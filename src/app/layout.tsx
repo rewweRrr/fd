@@ -1,59 +1,59 @@
-import type { Metadata } from 'next';
-import localFont from 'next/font/local';
-import { ReactNode } from 'react';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter';
-import { CssBaseline, ThemeProvider } from '@mui/material';
-import { theme } from '@/theme/theme';
-import { Footer } from '@/components/footer';
-import { SITE_URL } from '@/constants/constants';
+import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { CssBaseline, ThemeProvider } from '@mui/material'
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter'
+import localFont from 'next/font/local'
+import { Footer } from '@/components/footer'
+import { SITE_URL } from '@/constants/constants'
+import { theme } from '@/theme/theme'
 
 const fdFont = localFont({
   src: [
     {
       path: './_fonts/fd-font-montserrat-cyrillic.woff2',
       weight: '400',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: './_fonts/fd-font-montserrat-latin.woff2',
       weight: '400',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: './_fonts/fd-font-montserrat-cyrillic.woff2',
       weight: '500',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: './_fonts/fd-font-montserrat-latin.woff2',
       weight: '500',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: './_fonts/fd-font-montserrat-cyrillic.woff2',
       weight: '600',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: './_fonts/fd-font-montserrat-latin.woff2',
       weight: '600',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: './_fonts/fd-font-druk.woff',
       weight: '700',
-      style: 'normal'
-    }
+      style: 'normal',
+    },
   ],
   display: 'swap',
   variable: '--font-fd',
-  adjustFontFallback: 'Arial'
-});
+  adjustFontFallback: 'Arial',
+})
 
 export const metadata: Metadata = {
   title: {
     template: '%s | Factory Director',
-    default: 'Factory Director'
+    default: 'Factory Director',
   },
   description: 'Factory Director Цифровое решение для автоматизации производства',
   openGraph: {
@@ -63,17 +63,17 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: 'Factory Director',
     images: { url: `${SITE_URL}/factory_director_log.webp`, width: 147, height: 34 },
-    locale: 'ru_RU'
-  }
-};
+    locale: 'ru_RU',
+  },
+}
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
-  children: ReactNode;
+  children: ReactNode
 }>) {
   return (
-    <html lang='ru' className={fdFont.variable} style={{ scrollBehavior: 'smooth', scrollPaddingTop: '180px' }}>
+    <html lang="ru" className={fdFont.variable} style={{ scrollBehavior: 'smooth', scrollPaddingTop: '180px' }}>
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
@@ -84,5 +84,5 @@ export default function RootLayout({
         </AppRouterCacheProvider>
       </body>
     </html>
-  );
+  )
 }

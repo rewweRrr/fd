@@ -1,4 +1,4 @@
-import { Components, Theme } from '@mui/material';
+import type { Components, Theme } from '@mui/material'
 
 export const MuiTypography: Components<Theme>['MuiTypography'] = {
   styleOverrides: {
@@ -11,9 +11,9 @@ export const MuiTypography: Components<Theme>['MuiTypography'] = {
             textTransform: 'uppercase',
             fontSize: 50,
             [theme.breakpoints.down('md')]: {
-              fontSize: 26
-            }
-          })
+              fontSize: 26,
+            },
+          }),
         },
         {
           props: { variant: 'h2' },
@@ -22,11 +22,11 @@ export const MuiTypography: Components<Theme>['MuiTypography'] = {
             fontWeight: theme.typography.fontWeightBold,
             textTransform: 'uppercase',
             [theme.breakpoints.down('md')]: {
-              fontSize: 26
-            }
-          })
-        }
-      ]
-    }
-  }
-};
+              fontSize: 26,
+            },
+          }),
+        },
+      ],
+    },
+  },
+}

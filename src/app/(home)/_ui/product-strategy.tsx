@@ -1,55 +1,55 @@
-import { memo } from 'react';
-import { Box, Chip, Container, Grid, Stack, Typography } from '@mui/material';
-import Image from 'next/image';
+import { Box, Chip, Container, Grid, Stack, Typography } from '@mui/material'
+import Image from 'next/image'
+import { memo } from 'react'
 
 export const ProductStrategy = memo(() => {
   return (
-    <Container maxWidth='xl'>
+    <Container maxWidth="xl">
       <Stack rowGap={4}>
-        <Typography variant='h2' textAlign='center'>
+        <Typography variant="h2" textAlign="center">
           СТРАТЕГИЯ РАЗВИТИЯ ПРОДУКТА
         </Typography>
         <Grid container spacing={2}>
-          <Grid size={12} border='1px solid' p={2} display='flex' flexDirection='column' rowGap={2}>
-            <Stack direction='row' columnGap={2} justifyContent='space-between'>
-              <Typography fontSize={{ xs: 14, md: 28 }} fontWeight={700} textAlign='center' textTransform='uppercase'>
+          <Grid size={12} border="1px solid" p={2} display="flex" flexDirection="column" rowGap={2}>
+            <Stack direction="row" columnGap={2} justifyContent="space-between">
+              <Typography fontSize={{ xs: 14, md: 28 }} fontWeight={700} textAlign="center" textTransform="uppercase">
                 Внедрение на производства
               </Typography>
               <Chip
-                size='large'
-                variant='square-fit'
-                color='secondary'
-                label={
+                size="large"
+                variant="square-fit"
+                color="secondary"
+                label={(
                   <Typography fontSize={16} fontWeight={500}>
                     2025
                   </Typography>
-                }
+                )}
               />
             </Stack>
-            <Box height={{ xs: 200, sm: 350, md: 480 }} position='relative'>
-              <Image src='/home/master_dashboard.svg' alt='' fill />
+            <Box height={{ xs: 200, sm: 350, md: 480 }} position="relative">
+              <Image src="/home/master_dashboard.svg" alt="" fill />
             </Box>
           </Grid>
           <Grid
             size={{ xs: 12, md: 3 }}
-            border='1px solid'
+            border="1px solid"
             p={2}
-            display='flex'
-            flexDirection='column'
+            display="flex"
+            flexDirection="column"
             rowGap={2}
-            height='400px'
+            height="400px"
           >
             <Chip
-              size='large'
-              variant='square-fit'
-              color='secondary'
-              label={
+              size="large"
+              variant="square-fit"
+              color="secondary"
+              label={(
                 <Typography fontSize={16} fontWeight={500}>
                   2026
                 </Typography>
-              }
+              )}
             />
-            <Typography fontSize={{xs: 22, md: 18, lg: 22}} fontWeight={700}>
+            <Typography fontSize={{ xs: 22, md: 18, lg: 22 }} fontWeight={700}>
               Предиктивная аналитика
             </Typography>
             <Typography fontSize={16}>
@@ -58,24 +58,24 @@ export const ProductStrategy = memo(() => {
           </Grid>
           <Grid
             size={{ xs: 12, md: 3 }}
-            border='1px solid'
+            border="1px solid"
             p={2}
-            display='flex'
-            flexDirection='column'
+            display="flex"
+            flexDirection="column"
             rowGap={2}
-            height='400px'
+            height="400px"
           >
             <Chip
-              size='large'
-              variant='square-fit'
-              color='secondary'
-              label={
+              size="large"
+              variant="square-fit"
+              color="secondary"
+              label={(
                 <Typography fontSize={16} fontWeight={500}>
                   2027
                 </Typography>
-              }
+              )}
             />
-            <Typography fontSize={{xs: 22, md: 18, lg: 22}} fontWeight={700}>
+            <Typography fontSize={{ xs: 22, md: 18, lg: 22 }} fontWeight={700}>
               Искусственный интеллект
             </Typography>
             <Typography fontSize={16}>
@@ -83,45 +83,45 @@ export const ProductStrategy = memo(() => {
             </Typography>
           </Grid>
           <Grid
-            position='relative'
+            position="relative"
             size={{ xs: 12, md: 6 }}
-            border='1px solid'
+            border="1px solid"
             p={2}
-            display='flex'
-            flexDirection='column'
+            display="flex"
+            flexDirection="column"
             rowGap={2}
-            height='400px'
-            bgcolor='#141414'
+            height="400px"
+            bgcolor="#141414"
           >
             <Chip
-              size='large'
-              variant='square-fit'
-              color='secondary'
-              label={
+              size="large"
+              variant="square-fit"
+              color="secondary"
+              label={(
                 <Typography fontSize={16} fontWeight={500}>
                   2030
                 </Typography>
-              }
+              )}
             />
-            <Typography fontSize={28} fontWeight={700} color='secondary'>
+            <Typography fontSize={28} fontWeight={700} color="secondary">
               Индустрия 4.0
             </Typography>
-            <Typography fontSize={16} fontWeight={500} color='secondary'>
+            <Typography fontSize={16} fontWeight={500} color="secondary">
               Factory Director использует передовые технологии, интегрируя автоматизацию и умные системы для повышения
               гибкости и скорости производства
             </Typography>
             <Image
-              src='/home/polygon.svg'
-              alt=''
+              src="/home/polygon.svg"
+              alt=""
               fill
-              sizes='100vw'
+              sizes="100vw"
               style={{ objectFit: 'contain', objectPosition: 'bottom' }}
             />
           </Grid>
         </Grid>
       </Stack>
     </Container>
-  );
-});
+  )
+})
 
-ProductStrategy.displayName = 'ProductStrategy';
+ProductStrategy.displayName = 'ProductStrategy'
